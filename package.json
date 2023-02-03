@@ -1,0 +1,8 @@
+{
+  "name": "nokkel-shared",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "curtis huang <curtis.huang@nokkel.com>",
+  "license": "MIT",
+  "bugs": "https://github.com/nokkel-developer/shared/issues"
+}
