@@ -1,8 +1,19 @@
 {
   "name": "@nokkel-shared/string-manipulation",
   "version": "1.0.0",
-  "main": "index.js",
+  "author": "Nokkel",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "dist"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "title-case": "^3.0.3"
   },
