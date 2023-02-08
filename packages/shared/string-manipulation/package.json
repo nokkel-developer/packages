@@ -1,0 +1,14 @@
+{
+  "name": "@nokkel/string-manipulation",
+  "version": "1.0.0",
+  "description": "title-case with Irish names",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "title-case": "^3.0.3"
+  }
+}

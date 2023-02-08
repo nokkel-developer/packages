@@ -1,6 +1,6 @@
 {
-  "name": "nokkel-shared",
-  "version": "0.2.4",
+  "name": "root",
+  "version": "1.0",
   "main": "index.js",
   "author": "curtis huang <curtis.huang@nokkel.com>",
   "license": "MIT",
@@ -16,7 +16,19 @@
     "typescript": "*"
   },
   "workspaces": [
-    "./packages/debug",
-    "./packages/string-manipulation"
-  ]
+    "./packages/shared/*"
+  ],
+  "scripts": {
+    "initialise": "yarn",
+    "reinitialise": "yarn clean && yarn",
+    "build": "./node_modules/.bin/tsc -b",
+    "tsc:clean": "yarn build --clean && yarn build",
+    "start": "yarn build -w",
+    "clean": "yarn build --clean",
+    "releases:define": "yarn version check --interactive",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,json",
+    "lint:fix": "yarn lint --fix",
+    "test": "yarn workspaces foreach run test",
+    "postinstall": "yarn husky install && yarn build"
+  }
 }
