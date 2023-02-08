@@ -1,6 +1,6 @@
 {
   "name": "nokkel-shared",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "index.js",
   "author": "curtis huang <curtis.huang@nokkel.com>",
   "license": "MIT",
