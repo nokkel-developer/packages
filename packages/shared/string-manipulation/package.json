@@ -1,14 +1,38 @@
 {
   "name": "@nokkel/string-manipulation",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "title-case with Irish names",
-  "main": "index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "Nokkel Technologies Ltd.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "dist"
   },
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nokkel-developer/packages.git"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "release": "yarn npm publish"
+  },
+  "bugs": {
+    "url": "https://github.com/nokkel-developer/packages/issues"
+  },
   "dependencies": {
     "title-case": "^3.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
   }
 }
