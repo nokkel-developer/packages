@@ -1,10 +1,34 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+    "composite": true,
+    /* Basic Options */
+    "incremental": true,
+    "target": "esnext",
+    "module": "commonjs",
+
+    /* Strict Type-Checking Options */
+    "allowSyntheticDefaultImports": true,
+    "lib": [ "ES2017" ],
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "experimentalDecorators": true,
+
+    // Set to true later, for now leave as false during development
+    "noUnusedLocals": false,
+    // Set to true later, for now leave as false during development
+    "noUnusedParameters": false,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "baseUrl": "."
   },
   "references": [],
-  "include": ["./src"],
-  "exclude": ["__tests__", "dist", "node_modules"]
+  "exclude": [
+      "__tests__",
+      "dist",
+      "node_modules"
+  ]
 }

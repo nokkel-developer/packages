@@ -29,6 +29,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx,json",
     "lint:fix": "yarn lint --fix",
     "test": "yarn workspaces foreach run test",
-    "postinstall": "yarn husky install && yarn build"
+    "postinstall": "yarn husky install && yarn build",
+    "publish:debug": "cd ./packages/shared/debug && tsc && npm publish",
+    "publish:string-manipulation": "cd ./packages/shared/string-manipulation && tsc && npm publish"
   }
 }

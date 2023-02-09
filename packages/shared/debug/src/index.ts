@@ -1,10 +1,11 @@
 import debug from "debug";
 
-interface CreateDebugReturnObject {
+type CreateDebugReturnObject = {
   error: debug.Debugger;
   log: debug.Debugger;
   info: debug.Debugger;
 }
+
 export const createDebug = (nameSpace: string): CreateDebugReturnObject => {
   debug.disable();
 
